@@ -3,10 +3,16 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { HeaderComponent } from './header/header.component';
+import { FormTransactionComponent } from './form-transaction/form-transaction.component';
+import { FinancialStatementComponent } from './financial-statement/financial-statement.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HeaderComponent,
+    FormTransactionComponent,
+    FinancialStatementComponent
   ],
   imports: [
     BrowserModule,

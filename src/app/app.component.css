@@ -1,0 +1,12 @@
+.transaction {
+    background-color: green;
+}
+
+
+.statement {
+    background-color: red;
+}
+
+.component {
+    display: flex;
+}
