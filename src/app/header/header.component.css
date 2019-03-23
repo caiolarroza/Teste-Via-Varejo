@@ -3,7 +3,6 @@
 }
 
 .header-content {
-    width: 1100px;
     max-width: 1100px;
     margin: 0 auto;
     overflow: hidden;
@@ -24,7 +23,7 @@
 }
 
 .navigator {
-    margin: auto;
+    margin: 0 15px;
     float: right;
     position: relative;
     transform: translateY(50%);
@@ -54,5 +53,15 @@
 .teste {
     float: left;
 }
-@media (max-width: 1100px) {
+
+@media (max-width: 768px) {
+    .header {
+        background-color: blue;
+    }
+}
+
+@media (max-width: 375px) {
+    .header {
+        background-color: pink;
+    }
 }
