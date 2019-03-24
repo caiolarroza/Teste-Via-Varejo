@@ -1,10 +1,10 @@
 .transaction {
-    /* background-color: green; */
+    width: 40%;
 }
 
 
 .statement {
-    /* background-color: red; */
+    width: 60%;
 }
 
 .component {

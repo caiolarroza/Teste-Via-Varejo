@@ -20,15 +20,14 @@
                 {{ transaction.value | currency: "BRL" }}
             </span>
         </li>
-
-        <li class="item -footer">
-            <span class="label -left">
-                Total
-            </span>
-            <span class="label -right">
-                {{ total | currency: "BRL"}}
-            </span>
-        </li>
-        <span class="balance" *ngIf="total" [ngClass]="{ '-loss': isLoss(), '-profit': !isLoss() }"  >{{ balance }}</span>
     </ul>
+    <div class="footer">
+        <span class="label -left">
+            Total
+        </span>
+        <span class="label -right">
+            {{ total | currency: "BRL"}}
+        </span>
+    </div>
+    <span class="balance" *ngIf="total" [ngClass]="{ '-loss': isLoss(), '-profit': !isLoss() }"  >{{ balance }}</span>
 </div>

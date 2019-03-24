@@ -40,19 +40,10 @@ export class FormTransactionComponent implements OnInit {
             console.log("VENDA");
             this.total = this.total + this.transaction.value;
         }
-        
-        // this.transactionList.forEach(item => {
-        //     if (item.type == "BUY") {
-        //         console.log("COMPRA");
-        //         this.total = this.total - item.value;
-        //     } else {
-        //         console.log("VENDA");
-        //         this.total = this.total + item.value;
-        //     }
-        // });
+
         console.log("total ", this.total);
         this.totalEmitter.emit(this.total);
-        this.transaction = {};
+        this.transaction = { type: "" };
     }
 
     isDisabled() {

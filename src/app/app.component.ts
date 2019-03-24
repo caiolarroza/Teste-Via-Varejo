@@ -15,7 +15,6 @@ export class AppComponent {
     title = 'teste-via-varejo';
 
     receiveTransaction(event) {
-        console.log("kerk", event);
         this.transactionList = event;
     }
 

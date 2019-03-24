@@ -15,9 +15,28 @@ export class FinancialStatementComponent implements OnChanges {
     constructor() { }
 
     ngOnInit() {
-        // this.transactionList = [{name:"caio", value:100, type:"BUY"},
-        // {name:"caio caio caio caio caio", value:10000, type:"SELL"},
-        // {name:"Tio Vando", value:10000, type:"SELL"}];
+        this.transactionList = [
+            {name:"caio", value:100, type:"BUY"},
+            {name:"caio caio caio caio caio", value:10000, type:"SELL"},
+            {name:"caio caio caio caio caio", value:10000, type:"SELL"},
+            {name:"caio caio caio caio caio", value:10000, type:"SELL"},
+            {name:"caio caio caio caio caio", value:10000, type:"SELL"},
+            {name:"caio caio caio caio caio", value:10000, type:"SELL"},
+            {name:"caio caio caio caio caio", value:10000, type:"SELL"},
+            {name:"caio caio caio caio caio", value:10000, type:"SELL"},
+            {name:"caio caio caio caio caio", value:10000, type:"SELL"},
+            {name:"caio caio caio caio caio", value:10000, type:"SELL"},
+            {name:"caio caio caio caio caio", value:10000, type:"SELL"},
+            {name:"caio caio caio caio caio", value:10000, type:"SELL"},
+            {name:"caio caio caio caio caio", value:10000, type:"SELL"},
+            {name:"caio caio caio caio caio", value:10000, type:"SELL"},
+            {name:"caio caio caio caio caio", value:10000, type:"SELL"},
+            {name:"caio caio caio caio caio", value:10000, type:"SELL"},
+            {name:"caio caio caio caio caio", value:10000, type:"SELL"},
+            {name:"caio caio caio caio caio", value:10000, type:"SELL"},
+            {name:"caio caio caio caio caio", value:10000, type:"SELL"},
+            {name:"caio caio caio caio caio", value:10000, type:"SELL"},
+            {name:"Tio Vando", value:10000, type:"SELL"}];
     }
 
     ngOnChanges(changes: SimpleChanges) {
