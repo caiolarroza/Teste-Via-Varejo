@@ -6,6 +6,7 @@
                 Tipo de transação
             </label>
             <select id="transaction-type" name="transaction-type" class="input" [(ngModel)]="transaction.type">
+                <option value="" disabled selected>Selecione uma opção</option>
                 <option *ngFor="let option of selectOptions; let i = index" value="{{ option.value }}">{{ option.label }}</option>
             </select>
         </div>
@@ -20,8 +21,6 @@
                 Valor
             </label>
             <input id="product-value" name="product-value" type="number" [(ngModel)]="transaction.value" class="input" placeholder="R$ 0,00">
-            {{ transaction | json }}
-            {{ transaction.value | currency}}
         </div>
         <div class="input-wrapper">
             <button id="add-transaction" name="add-transaction" class="btn" [disabled]="isDisabled()"

@@ -26,8 +26,9 @@
                 Total
             </span>
             <span class="label -right">
-                {{ total }}
+                {{ total | currency: "BRL"}}
             </span>
         </li>
+        <span class="balance" *ngIf="total" [ngClass]="{ '-loss': isLoss(), '-profit': !isLoss() }"  >{{ balance }}</span>
     </ul>
 </div>

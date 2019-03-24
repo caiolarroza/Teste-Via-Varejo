@@ -20,7 +20,7 @@ export class FormTransactionComponent implements OnInit {
         label: "Venda"
     }];
     transactionList: ITransaction[] = [];
-    transaction: ITransaction = {};
+    transaction: ITransaction = { type: "" };
     @Output() transactionEmitter = new EventEmitter<ITransaction[]>();
     @Output() totalEmitter = new EventEmitter<number>();
 
@@ -32,13 +32,24 @@ export class FormTransactionComponent implements OnInit {
         console.log("total 1", this.total);
         this.transactionList.push(this.transaction);
         this.transactionEmitter.emit(this.transactionList);
-        this.transactionList.forEach(item => {
-            if (item.type == "BUY") {
-                this.total = this.total - item.value;
-            } else {
-                this.total = this.total + item.value;
-            }
-        });
+        
+        if (this.transaction.type == "BUY") {
+            console.log("COMPRA");
+            this.total = this.total - this.transaction.value;
+        } else {
+            console.log("VENDA");
+            this.total = this.total + this.transaction.value;
+        }
+        
+        // this.transactionList.forEach(item => {
+        //     if (item.type == "BUY") {
+        //         console.log("COMPRA");
+        //         this.total = this.total - item.value;
+        //     } else {
+        //         console.log("VENDA");
+        //         this.total = this.total + item.value;
+        //     }
+        // });
         console.log("total ", this.total);
         this.totalEmitter.emit(this.total);
         this.transaction = {};
