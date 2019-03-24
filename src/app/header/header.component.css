@@ -11,15 +11,15 @@
 .fa-cash-register {
     font-size: 40px;
     text-align: center;
-    margin: 15px;
+    margin: 20px;
     float: left;
 }
 
 .title {
     font-size: 23px;
-    margin: 15px;
+    margin: 15px 15px 15px 0;
     float: right;
-    line-height: 40px;
+    line-height: 50px;
 }
 
 .navigator {
@@ -50,14 +50,25 @@
     padding: 10px;
 }
 
-.teste {
+.title-wrapper {
     float: left;
 }
 
 @media (max-width: 768px) {
-    .header {
+    /* .header {
         background-color: blue;
     }
+
+    .navigator .menu {
+        display: none;
+    }
+    */
+    .menu .item {
+        display: block;
+        margin: 10px 0;
+        border-right: 1px solid;
+    }
+    /* <i class="fas fa-bars"></i> */
 }
 
 @media (max-width: 375px) {

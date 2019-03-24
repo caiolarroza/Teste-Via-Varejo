@@ -1,12 +1,14 @@
 .transaction {
-    background-color: green;
+    /* background-color: green; */
 }
 
 
 .statement {
-    background-color: red;
+    /* background-color: red; */
 }
 
 .component {
     display: flex;
+    max-width: 1100px;
+    margin: 0 auto;
 }

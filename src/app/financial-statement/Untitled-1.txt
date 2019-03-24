@@ -1,0 +1,5 @@
+<li _ngcontent-c3="" class="item" margin:=""><span _ngcontent-c3="" class="label -left"><!--bindings={
+  "ng-reflect-ng-if": "true"
+}--><span _ngcontent-c3="" class="icon"> - </span><!--bindings={
+  "ng-reflect-ng-if": "false"
+}--> caio </span><span _ngcontent-c3="" class="label -right"> R$100.00 </span></li>

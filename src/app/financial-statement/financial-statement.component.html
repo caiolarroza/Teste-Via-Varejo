@@ -1,3 +1,33 @@
-<p>
-  financial-statement works!
-</p>
+<div class="statement-wrapper">
+    <h3 class="title">Extrato de transações</h3>
+    <ul class="list">
+        <li class="item -header">
+            <span class="label -left -header">
+                Mercadoria
+            </span>
+            <span class="label -right">
+                Valor
+            </span>
+        </li>
+        <!-- <hr> -->
+        <li class="item" *ngFor="let transaction of transactionList; let i = index">
+            <span class="label -left">
+                <span class="icon" *ngIf="transaction.type == 'BUY'"> - </span>
+                <span class="icon" *ngIf="transaction.type == 'SELL'"> + </span>
+                {{ transaction.name }}
+            </span>
+            <span class="label -right">
+                {{ transaction.value | currency: "BRL" }}
+            </span>
+        </li>
+
+        <li class="item -footer">
+            <span class="label -left">
+                Total
+            </span>
+            <span class="label -right">
+                {{ total }}
+            </span>
+        </li>
+    </ul>
+</div>

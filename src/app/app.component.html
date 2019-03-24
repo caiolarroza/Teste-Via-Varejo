@@ -1,5 +1,5 @@
 <header-component></header-component>
 <div class="component">
-  <form-transaction class="transaction"></form-transaction>
-  <financial-statement class="statement"></financial-statement>
+  <form-transaction class="transaction" (transactionEmitter)="receiveTransaction($event)" (totalEmitter)=receiveTotal($event)></form-transaction>
+  <financial-statement class="statement" [transactionList]="transactionList" [total]="total"></financial-statement>
 </div>

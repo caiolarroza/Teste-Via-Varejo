@@ -1,0 +1,54 @@
+.form-wrapper {
+    margin-top: 30px;
+    margin-left: 15px;
+    margin-right: 15px;
+    border: 1px solid #888;
+    border-radius: 10px;
+    width: 23vw;
+}
+
+.title {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    margin: 25px 0;
+}
+
+.input-wrapper {
+    margin: 20px;
+}
+
+.input-wrapper label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.input-wrapper .input {
+    width: 100%;
+    border: 1px solid #888;
+    border-radius: 5px;
+    padding: 10px;
+    box-sizing: border-box;
+    font-size: 1em;
+}
+
+.input-wrapper .btn {
+    width: 100%;
+    padding: 10px;
+    font-size: 1em;
+    color: #fff;
+    background-color: #333;
+    border: none;
+    border-radius: 5px;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.input-wrapper .btn.-active:hover {
+    background-color: #222;
+}
+
+.input-wrapper .-disabled {
+    cursor: default;
+    opacity: 0.8;
+}
