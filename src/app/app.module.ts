@@ -7,13 +7,15 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { FormTransactionComponent } from './form-transaction/form-transaction.component';
 import { FinancialStatementComponent } from './financial-statement/financial-statement.component';
+import { SideNavBarComponent } from './side-nav-bar/side-nav-bar.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     FormTransactionComponent,
-    FinancialStatementComponent
+    FinancialStatementComponent,
+    SideNavBarComponent
   ],
   imports: [
     BrowserModule,

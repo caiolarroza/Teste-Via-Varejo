@@ -17,7 +17,7 @@
 
 .title {
     font-size: 23px;
-    margin: 15px 15px 15px 0;
+    margin: 15px 34%;
     float: right;
     line-height: 50px;
 }
@@ -27,6 +27,15 @@
     float: right;
     position: relative;
     transform: translateY(50%);
+}
+
+.btn-menu {
+    display: none;
+    border: none;
+    background-color: inherit;
+    font-size: 23px;
+    float: right;
+    margin: 25px 15px;
 }
 
 .navigator .menu {
@@ -52,27 +61,36 @@
 
 .title-wrapper {
     float: left;
+    width: 300px;
+    max-width: 59%;
+}
+
+@media (max-width: 1023px) {
+
+    .navigator {
+        display: none;
+    }
+
+    .btn-menu {
+        display: block;
+    }
+
 }
 
 @media (max-width: 768px) {
-    /* .header {
-        background-color: blue;
-    }
 
-    .navigator .menu {
+    .menu .item {
         display: none;
     }
-    */
-    .menu .item {
-        display: block;
-        margin: 10px 0;
-        border-right: 1px solid;
-    }
-    /* <i class="fas fa-bars"></i> */
 }
 
 @media (max-width: 375px) {
-    .header {
-        background-color: pink;
+
+    .title {
+        font-size: 20px;
+    }
+
+    .navigator {
+        display: none;
     }
 }

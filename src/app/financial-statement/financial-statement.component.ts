@@ -19,7 +19,7 @@ export class FinancialStatementComponent implements OnChanges {
             {name:"caio", value:100, type:"BUY"},
             {name:"caio caio caio caio caio", value:10000, type:"SELL"},
             {name:"caio caio caio caio caio", value:10000, type:"SELL"},
-            {name:"caio caio caio caio caio", value:10000, type:"SELL"},
+            {name:"caio caio caio caio cacaio caio cacaio caio caio", value:10000, type:"SELL"},
             {name:"caio caio caio caio caio", value:10000, type:"SELL"},
             {name:"caio caio caio caio caio", value:10000, type:"SELL"},
             {name:"caio caio caio caio caio", value:10000, type:"SELL"},

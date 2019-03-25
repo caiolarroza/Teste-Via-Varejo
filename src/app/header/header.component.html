@@ -1,12 +1,15 @@
 <header class="header">
     <div class="header-content">
+        <i class="fas fa-cash-register"></i>
         <span class="title-wrapper">
-            <i class="fas fa-cash-register"></i>
             <h1 class="title">
                 Controle financeiro
             </h1>
         </span>
-        <nav *ngIf="sideMenuVisible" class="navigator">
+        <button class="btn-menu" (click)="openSideNav()">
+            <i class="fas fa-bars"></i>
+        </button>
+        <nav class="navigator">
             <ul class="menu">
                 <li class="item">
                     <a>Dashboard</a>

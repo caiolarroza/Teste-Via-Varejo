@@ -11,4 +11,14 @@
     display: flex;
     max-width: 1100px;
     margin: 0 auto;
+    max-height: 1080px;
+}
+
+@media (max-width: 1023px) {
+    
+    .component {
+        display: block;
+        max-height: 800px;
+    }
+
 }

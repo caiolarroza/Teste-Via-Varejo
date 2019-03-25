@@ -1,4 +1,5 @@
-<header-component></header-component>
+<side-nav-bar *ngIf="sideMenuVisible" [(openNav)]="openNav"></side-nav-bar>
+<header-component (visibleEmitter)="receiveVisible($event)"></header-component>
 <div class="component">
   <form-transaction class="transaction" (transactionEmitter)="receiveTransaction($event)" (totalEmitter)=receiveTotal($event)></form-transaction>
   <financial-statement class="statement" [transactionList]="transactionList" [total]="total"></financial-statement>

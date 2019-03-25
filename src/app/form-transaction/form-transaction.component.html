@@ -1,7 +1,7 @@
 <div class="form-wrapper">
     <h3 class="title">Nova transação</h3>
-    <form name="form-transaction">
-        <div class="input-wrapper">
+    <form name="form-transaction" class="form-transaction">
+        <div class="input-wrapper -field">
             <label for="transaction-type">
                 Tipo de transação
             </label>
@@ -10,19 +10,19 @@
                 <option *ngFor="let option of selectOptions; let i = index" value="{{ option.value }}">{{ option.label }}</option>
             </select>
         </div>
-        <div class="input-wrapper">
+        <div class="input-wrapper -name">
             <label for="product-name">
                 Nome da mercadoria
             </label>
             <input id="product-name" name="product-name" type="text" [(ngModel)]="transaction.name" class="input" placeholder="Input">
         </div>
-        <div class="input-wrapper">
+        <div class="input-wrapper -field">
             <label for="product-value">
                 Valor
             </label>
             <input id="product-value" name="product-value" type="number" [(ngModel)]="transaction.value" class="input" placeholder="R$ 0,00">
         </div>
-        <div class="input-wrapper">
+        <div class="input-wrapper -button">
             <button id="add-transaction" name="add-transaction" class="btn" [disabled]="isDisabled()"
                 [ngClass]="{'-disabled': isDisabled(), '-active': !isDisabled()}" (click)="addTransaction()">Adicionar transação</button>
         </div>

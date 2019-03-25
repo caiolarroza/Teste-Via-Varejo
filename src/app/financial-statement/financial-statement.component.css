@@ -13,7 +13,9 @@
 }
 
 .list {
-    height: 580px;
+    height: auto;
+    max-height: 600px;
+    min-height: 50px;
     overflow-y: auto;
     border-bottom: 3px double #9a9a9a;
 }
@@ -45,6 +47,7 @@
 }
 
 .list .item.-header {
+    padding-top: 0;
     font-weight: bold;
 }
 
@@ -52,19 +55,22 @@
     position: relative;
     top: 10px;
     font-weight: bold;
+    overflow: hidden;
 }
 
-.list .item .label.-right {
+.list .item .label.-right,
+.footer .-right {
     float: right;
 }
 
-.list .item .label.-left {
+.list .item .label.-left,
+.footer .-left {
     float: left;
 }
 
 .balance {
     float: right;
-    margin: 0 30px;
+    margin: 15px 30px 0 30px;
 }
 
 .balance.-loss {
@@ -73,4 +79,62 @@
 
 .balance.-profit {
     color: green;
+}
+
+@media (max-width: 1023px) {
+
+    .title {
+        margin: 45px 15px 15px;
+    }
+
+    .list {
+        max-height: 400px;
+        min-height: 50px;
+        height: auto;
+        overflow-y: auto;
+        border-bottom: 3px double #9a9a9a;
+    }
+
+    .icon {
+        margin: 0 10px;
+    }
+
+    .list .item.-header .label,
+    .footer .label {
+        margin: 0 30px 0 30px;
+    }
+
+    .list .item .label {
+        margin: 0 30px 0 0;
+        max-width: 200px;
+        /* background-color: green; */
+    }
+
+}
+
+@media (max-width: 375px) {
+
+    .title {
+        margin: 30px 15px 25px 15px;
+    }
+
+    .list {
+        max-height: 150px;
+        min-height: 50px;
+        height: auto;
+        overflow-y: auto;
+        border-bottom: 3px double #9a9a9a;
+    }
+
+    .list .item.-header .label,
+    .footer .label {
+        margin: 0 4% 0 9%;
+    }
+
+    .list .item .label {
+        margin: 0 4% 0 0;
+        max-width: 200px;
+        /* background-color: green; */
+    }
+
 }

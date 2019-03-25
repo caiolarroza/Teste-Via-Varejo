@@ -5,10 +5,3 @@ export interface ITransaction {
     name?: string,
     value?: number
 }
-
-@Injectable()
-export abstract class TransactionService {
-
-    abstract getTransactions(): ITransaction[];
-
-}
