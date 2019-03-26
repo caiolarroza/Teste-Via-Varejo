@@ -26,11 +26,9 @@ export class SideNavBarComponent implements OnInit {
     closeSideNav() {
         this.openNav = false;
         this.openNavChange.emit(this.openNav);
-        console.log("this.openNav ", this.openNav);
     }
 
     isOpenNav() {
-        console.log("aaaaads");
         if (this.openNav) {
             return true;
         } else {

@@ -24,7 +24,6 @@ export class AppComponent {
     @HostListener('window:resize', ['$event'])
     getScreenSize(event?) {
         this.screenWidth = window.innerWidth;
-        console.log(this.screenWidth);
         if (this.screenWidth < 1024) {
             this.sideMenuVisible = true;
         } else {
@@ -41,7 +40,6 @@ export class AppComponent {
     }
 
     receiveVisible(event) {
-        console.log("evento ", event);
         this.openNav = event;
     }
 

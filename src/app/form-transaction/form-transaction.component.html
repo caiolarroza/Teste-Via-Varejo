@@ -20,7 +20,7 @@
             <label for="product-value">
                 Valor
             </label>
-            <input id="product-value" name="product-value" type="number" [(ngModel)]="transaction.value" class="input" placeholder="R$ 0,00">
+            <input id="product-value" name="product-value" type="text" [(ngModel)]="transaction.value" (keyup)="transaction.value = formatCurrency(transaction.value)" class="input" placeholder="R$ 0,00">
         </div>
         <div class="input-wrapper -button">
             <button id="add-transaction" name="add-transaction" class="btn" [disabled]="isDisabled()"

@@ -19,13 +19,11 @@ export class HeaderComponent implements OnInit {
     @HostListener('window:resize', ['$event'])
     getScreenSize(event?) {
         this.screenWidth = window.innerWidth;
-        // console.log("aaa ", this.screenWidth);
         if (this.screenWidth < 1024) {
             this.isMobile = true;
         } else {
             this.isMobile = false;
         }
-        // console.log("this.isMobile ", this.isMobile);
     }
 
     ngOnInit() {
@@ -33,7 +31,6 @@ export class HeaderComponent implements OnInit {
 
     openSideNav() {
         this.sideNavVisible = true;
-        console.log("sideNavVisible ", this.sideNavVisible);
         this.visibleEmitter.emit(this.sideNavVisible);
     }
 
